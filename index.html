@@ -4,14 +4,28 @@
 		<meta charset=utf-8>
 		<title>Computa Goulaficou</title>
 		<style>
-			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
+			body {margin: 0;}
+			canvas {width: 100%; height: 100%;}
 		</style>
 	</head>
 	<body>
 		<script src="libraries/three.js"></script>
+		<script src="src/camera.js"></script>
 		<script src="src/keyboard.js"></script>
 		<script src="src/skybox.js"></script>
+		<script src="src/terrain.js"></script>
+		<script src="src/life.js"></script>
+		<script src="src/animation.js"></script>
 		<script src="src/main.js"></script>
+		<br/>
+		<input type="button" value="Camera 0" onclick="camera0Clicked()" />
+		<input type="button" value="Camera 1" onclick="camera1Clicked()" />
+		<input type="button" value="Camera 2" onclick="camera2Clicked()" />
+		<br />
+		<a href="readme.html"><input type="button" value="See the Readme" /></a>
+		<br/><br/>
+		Q: UP<br/>
+		W: DOWN<br/>
+		Arrows to move
 	</body>
 </html>

@@ -9,8 +9,13 @@ const createFloor = () => {
   var floorTexture = new THREE.ImageUtils.loadTexture('ressources/SkyBox/SkyBox5.bmp');
   floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
   floorTexture.repeat.set(500, 500);
-  var floorMaterial = new THREE.MeshBasicMaterial({ map: floorTexture, side: THREE.DoubleSide });
-  var floorGeometry = new THREE.PlaneGeometry(1000, 1000, 10, 10);
+  var floorMaterial = new THREE.MeshBasicMaterial({
+    map: floorTexture,
+    side: THREE.DoubleSide,
+    transparent: true,
+    opacity: 0.7
+  });
+  const floorGeometry = new THREE.PlaneGeometry(1000, 1000, 10, 10);
   var floor = new THREE.Mesh(floorGeometry, floorMaterial);
   floor.position.y = -0.5;
   floor.rotation.x = Math.PI / 2;

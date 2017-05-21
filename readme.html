@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <h1>README</h1>
+    <h2>Introduction</h2>
+    <p>
+      The project consists of rendering a terrain from a heightmap, applying
+      textures on it, and adding an entire environment : water, sky, fish, etc.<br/>
+    </p>
+    <h2>Instructions</h2>
+    <p>
+      This project has been developed in Javascript thanks to the library
+      Three.js which is using WebGL APIs.<br/>
+      To launch the project, just open index.html in your browser. Firefox is
+      recommended, since the development has been done on this browser and no
+      major problem has been detected. Using Chrome or another webkit browser
+      may lead to an incomplete scene rendering.<br/><br/>
+      If any problem occurs, it is recommended to reload the page once.<br/><br/>
+      To interact within the scene, you can either click on the buttons to
+      change the camera, or use the arrows to move, Q to go UP and W to go DOWN.<br/>
+    </p>
+    <h2>Implementation</h2>
+    <p>
+      The index.html is the entry point of the project. It links to all the
+      needed files, including the Three.js library and all the Javascript files
+      I wrote (located in src/ directory). The ressources used, such as 3D
+      models, heightmap or textures, can be found in the ressources/ directory.<br/><br/>
+      The src/main.js file is the first Javascript file. It creates the instance of
+      object of the scene as well as the camera. It sets the global variables and
+      initialize the scene.<br/><br/>
+      Animations (fish, water, starship) are handled in the animation.js file.
+      Keyboard interactions are handled in the keyboard.js file. Camera changes
+      are handled in the camera.js file. terrain.js and skybox.js respectly
+      take care of the creation of the terrain and the skybox. life.js creates
+      other elements of the scene, such as the fish or the starship.
+    </p>
+    <h2>Contact</h2>
+    For all questions, please send an email to laprayeod10@mails.tsinghua.edu.cn
+  </body>
+</html>
